@@ -54,6 +54,3 @@ for i in range(epochs):
     
     if i % 100 == 0:
         print("epoch=%.f, slope1=%.04f, slope2=%.04f, intercept=%.04f"%(i,a1,a2,b))
-
-    
-    

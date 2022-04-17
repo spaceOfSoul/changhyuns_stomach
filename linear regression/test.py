@@ -1,4 +1,3 @@
-from sklearn.model_selection import learning_curve
 import tensorflow as tf
 
 #height = [170, 180, 175, 160]
