@@ -1,9 +1,9 @@
-
 import tensorflow as tf
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
-data = pd.read_csv('app\gpascore.csv')
+data = pd.read_csv('graduateSchool\gpascore.csv')
 print(data)
 
 data = data.dropna()
@@ -26,7 +26,7 @@ model.fit( np.array(xdata), np.array(ydata), epochs=1000)
 while True:
     a = int(input('toeic score : '))
     b = float(input('credit score : '))
-    c = int(input('school rank :'))
+    c = int(input('school rank : '))
     predict = model.predict([[a, b, c]])
     print(predict)
 exit()
